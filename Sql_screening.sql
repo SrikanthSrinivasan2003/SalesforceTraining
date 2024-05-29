@@ -1,0 +1,72 @@
+--TABLE CREATION
+CREATE TABLE employee(
+id INT,
+name VARCHAR(100),
+department VARCHAR(100),
+Salary INT,
+year_of_joining INT
+);
+
+-- Value Insertion
+INSERT INTO
+  employee (id, name, department, salary, year_of_joining)
+VALUES
+  (1, "RAM", "CEO", 1000000, 2015),
+  (2, "SIVA", "HR", 50000, 2015),
+  (22, "ANU", "HR", 300000, 2017),
+  (7, "KRISHNA", "MARKETING MANAGER", 300000, 2016),
+  (10, "ARUL", "TECHNICIAN", 100000, 2018),
+  (15, "INDHU", "TL", 250000, 2019),
+  (19, "NAVEEN", "HR", 450000, 2020),
+  (NULL, "SAM", "MANAGER", 250000, 2023);
+--select
+SELECT * FROM EMPLOYEE;
+SELECT name, year_of_joining FROM EMPLOYEE;
+SELECT name, year_of_joining, salary / 10 AS Bonus FROM EMPLOYEE;
+
+-- WHERE,AND,OR, NOT
+SELECT * FROM employee WHERE salary > 500000
+
+SELECT * FROM employee WHERE salary < 500000 AND salary > 250000
+
+SELECT * FROM employee WHERE salary > 500000 OR year_of_joining > 2017
+
+
+SELECT * FROM employee WHERE NOT DEPARTMENT = "HR"
+
+--IN
+SELECT * FROM employee WHERE DEPARTMENT IN ('HR', 'CEO')
+
+
+--BETWEEN
+SELECT * FROM employee WHERE salary BETWEEN 50000 AND 300000
+
+--LIKE
+SELECT * FROM employee WHERE NAME LIKE "%A"
+
+
+SELECT * FROM  employee WHERE  NAME LIKE "A%"
+
+SELECT * FROM employee WHERE NAME LIKE "%A%"
+
+
+
+SELECT  * FROM  employee WHERE NAME LIKE "_%U"
+
+SELECT * FROM  employee WHERE NAME LIKE "%VA%"
+
+
+
+--IS NULL
+SELECT * FROM EMPLOYEE WHERE ID IS NULL
+
+-- ORDERBY
+SELECT * FROM EMPLOYEE ORDER BY ID
+
+--LIMIT
+SELECT * FROM EMPLOYEE ORDER BY  ID LIMIT  5
+
+
+SELECT * FROM EMPLOYEE ORDER BY ID LIMIT 1, 5
+
+
