@@ -1,0 +1,12 @@
+Division operation in Java
+
+- The behavior of the division operation depends on the data types involved and the values of the operands:
+
+1. Integer Division - It truncates results and throws an ArithmeticException if the denominator is zero.
+
+2. Floating-Point Division - It retains fractional parts, yields: 
+- Infinity when numerator is positive and denominator is 0.0, 
+- -Infinity when numerator is negative and denominator is 0.0, or
+- NaN when both are 0.0.
+
+3. Mixed-Type Division- It promotes integers to floating-point types, following floating-point division rules.
