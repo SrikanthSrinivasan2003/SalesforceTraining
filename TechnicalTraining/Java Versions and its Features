@@ -1,0 +1,35 @@
+1.	Java 1.0 (January 23, 1996):
+o Initial release of Java by Sun Microsystems.
+o	Introduced key concepts such as platform independence, security, and portability.
+
+2.	Java 1.2 (Java 2) (December 8, 1998):
+o	Introduced the Swing GUI toolkit, enhancing graphical user interface development.
+o	Enhanced performance and stability.
+
+3.	Java 5 (September 30, 2004):
+o	Introduced generics, enabling stronger type checking at compile time.
+o	Added metadata annotations for easier code organization.
+o	Introduced enhanced for loop for iterating over collections.
+
+4.	Java 8 (March 18, 2014):
+o	Introduced Lambda expressions, enabling functional programming paradigms.
+o	Added the Stream API for processing collections of data in a functional style.
+o	Introduced the java.time package for improved date and time handling.
+
+5.	Java 11 (September 25, 2018):
+o	Introduced the module system (Project Jigsaw) for modular programming.
+o	Removed deprecated APIs and features.
+o	Long-term support (LTS) release with updates and bug fixes for a longer duration.
+
+6.	Java 14 (March 17, 2020):
+o	Introduced switch expressions to enhance the switch statement.
+o	Added records to provide a compact syntax for declaring classes.
+
+7.	Java 17 (September 14, 2021):
+o	Introduced sealed classes and interfaces to restrict the subclasses of a class or the implementors of an interface.
+o	Added pattern matching for the instanceof operator to simplify type casting.
+
+8.	Java 21 (September 19, 2023):
+o	Introduced unnamed classes, allows for a barebones Main class without boilerplate code
+o Introduced String Template’ features that allows to mix the expression and code together
+o	introduced virtual threads to do tasks quickly without allocating much resources and space in the memory.
