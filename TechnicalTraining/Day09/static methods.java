@@ -2,7 +2,7 @@ public class MyClass {
 	private int Section;//non-static or instance variable
 	private static int srNo;//static 
 	
-	
+
 	//static block
 	static {
 		System.out.println("-----Within Static Block-----");
