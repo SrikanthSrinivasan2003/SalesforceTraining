@@ -25,12 +25,12 @@ public class MethodOverridingDemo {
 	public static void main(String[] args) {
 		RBI bank;
 		bank = new SBI();
-		System.out.println(bank);
+		System.out.println(bank.getRateOfInterest());
 		
 		bank = new HDFC();
-		System.out.println(bank);
+		System.out.println(bank.getRateOfInterest());
 		
 		bank = new ICICI();
-		System.out.println(bank);
+		System.out.println(bank.getRateOfInterest());
 	}
 }
