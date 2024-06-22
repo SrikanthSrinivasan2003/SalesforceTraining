@@ -1,0 +1,5 @@
+Can we overload main method?
+Yes, we can overload as many main methods as we want, provided that the method signature for each main should be different.
+- The entry point for the JVM to begin its execution is "public static void main(String[] args)".
+- Without the original main() method, the class will compile but won't execute.
+- The overloaded main methods won't execute on their own, we need to call it from the actual original method only.
