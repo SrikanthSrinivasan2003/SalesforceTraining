@@ -1,0 +1,38 @@
+
+import java.util.List;
+
+public class LowerBoundedWildCard {
+	//Parameter List(<?>) is List of Any Super Class Object of Integer
+			public static void displayNumbers(List<? super Integer> list) // any super class of Integer class
+			{
+				for (Object n : list) 
+				{
+					System.out.println(n);
+				}
+			}
+		}
+
+import java.util.Arrays;
+import java.util.List;
+
+public class LowerBoundedWildCardDemo {
+
+	public static void main(String[] args) {
+		List<Integer> intList = Arrays.asList(1, 2, 3);
+	
+		System.out.println("Display Integer values");
+		//Display List of Integers
+		LowerBoundedWildCard.displayNumbers(intList);
+
+		List<Number> numberList = Arrays.asList(1.0, 2.0, 3.0,10,4,30);
+		System.out.println("Display Number values");
+		//Display List of Numbers
+		LowerBoundedWildCard.displayNumbers(numberList);
+
+		/*
+		 * List<Double> doubleList= Arrays.asList(1.0,2.0,3.0);
+	     * System.out.println("Display Double values");
+		 *  displayNumbers(doubleList);
+		 */
+	}
+}
