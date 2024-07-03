@@ -7,13 +7,22 @@ public class GenericConstrutor {
 		System.out.println("The Double value of the given number is: "+v);
 	}
 }
+package com.sairam.day17;
+
 public class GenericConstructorDemo {
 
 	public static void main(String[] args) {
-		GenericConstrutor ob = new GenericConstrutor(10);
-		GenericConstrutor obj1 = new GenericConstrutor(654F);
-		ob.show();
-		obj1.show();
+		  System.out.println("Number to Double Conversion:");
+		  
+		  GenericConstrutor obj=new GenericConstrutor(10);
+		  obj.show();
+		  
+		  GenericConstrutor objOne=new GenericConstrutor(136.8F);
+		  objOne.show();
+		  
+			/*
+			 * GenericConstructors objTwo=new GenericConstructors("Hello")); objTwo.show();
+			 */
 
 	}
 
